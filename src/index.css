@@ -46,7 +46,7 @@ body {
   .title{
   }
 
-  #intro{
+  #small{
     font-family: 'Maven Pro', sans-serif;
     font-size: 20px;
     font-weight: normal;
@@ -75,3 +75,21 @@ body {
     margin-top: 50px;
   }
 
+  #skills{
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: #4682B4 ;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  li{
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: #4682B4 ;
+  }
+
+
+  

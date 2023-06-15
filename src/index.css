@@ -91,5 +91,11 @@ body {
     color: #4682B4 ;
   }
 
+  .centered{
+    display: flex;
+    justify-content: center;
+  }
 
-  
+  .cards{
+    margin: 30px 30px 30px 30px;
+  }

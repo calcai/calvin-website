@@ -4,8 +4,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import "../index.css"
 import aboutphoto1 from "../img/aboutphoto1.JPG"
 import aboutphoto2 from "../img/aboutphoto2.JPG"
-import {DiJava, DiPython, DiJavascript1, DiHtml5, DiCss3, DiReact, DiBootstrap, DiGit, DiGithubBadge} from "react-icons/di"
-
+import Skills from "../components/Skills"
 
 const AboutPage = () => {
   return (
@@ -18,66 +17,7 @@ const AboutPage = () => {
                 </div>
                 <div className = "col-lg">
                     <p>Hi, I'm Calvin, a computer science major interested in software and full-stack development with a strong understanding of Agile Development. I am skilled in the following areas:</p>
-                    <p id = "skills" >Languages:</p>
-                    <div className = "row">
-                        <div className = "col-sm">
-                            <div style={{display: "flex", justifyContent: "center"}}>  
-                                <DiJava color = "#ADD8E6" size = "40px"/>
-                            </div> 
-                            <p id = "skills">Java</p>
-                        </div>
-                        <div className = "col-sm">
-                            <div style={{display: "flex", justifyContent: "center"}}>  
-                                <DiPython color = "#ADD8E6" size = "40px"/>
-                            </div>
-                            <p id = "skills">Python</p>
-                        </div>
-                        <div className = "col-sm">
-                            <div style={{display: "flex", justifyContent: "center"}}>  
-                                <DiJavascript1 color = "#ADD8E6" size = "40px"/>
-                            </div>
-                            <p id = "skills">JavaScript</p>
-                        </div>
-                        <div className = "col-sm">
-                            <div style={{display: "flex", justifyContent: "center"}}>  
-                                <DiHtml5 color = "#ADD8E6" size = "40px"/>
-                            </div>
-                            <p id = "skills">HTML5</p>
-                        </div>
-                        <div className = "col-sm">
-                            <div style={{display: "flex", justifyContent: "center"}}>  
-                                <DiCss3 color = "#ADD8E6" size = "40px"/>
-                            </div>
-                            <p id = "skills">CSS3</p>
-                        </div>
-                    </div>
-                    <p id = "skills" >Technologies:</p>
-                    <div class = "row">
-                        <div className = "col-sm">
-                            <div style={{display: "flex", justifyContent: "center"}}>  
-                                <DiReact color = "#ADD8E6" size = "40px"/>
-                            </div>
-                            <p id = "skills">React.js</p>
-                        </div>
-                        <div className = "col-sm">
-                            <div style={{display: "flex", justifyContent: "center"}}>  
-                                <DiBootstrap color = "#ADD8E6" size = "40px"/>
-                            </div>
-                            <p id = "skills">Bootstrap</p>
-                        </div>
-                        <div className = "col-sm">
-                            <div style={{display: "flex", justifyContent: "center"}}>  
-                                <DiGit color = "#ADD8E6" size = "40px"/>
-                            </div>
-                            <p id = "skills">Git</p>
-                        </div>
-                        <div className = "col-sm">
-                            <div style={{display: "flex", justifyContent: "center"}}>  
-                                <DiGithubBadge color = "#ADD8E6" size = "40px"/>
-                            </div>
-                            <p id = "skills">GitHub</p>
-                        </div>
-                    </div>
+                    <Skills/>
                 </div>
             </div>
         </div>

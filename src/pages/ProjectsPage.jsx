@@ -7,7 +7,7 @@ import Card3 from '../components/Projects/Card3'
 const ProjectsPage = () => {
   return (
     <>
-    <div className = "projects">
+    <div>
       <h1 className = "centered" id = "primary">Projects</h1>
         <div className = "centered"><Card1/><Card2/><Card3/></div>
     </div>

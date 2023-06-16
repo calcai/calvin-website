@@ -11,6 +11,7 @@ import IconButton from '@mui/material/IconButton';
 import Theme from '../Theme';
 import { ThemeProvider } from '@emotion/react';
 import Tooltip from '@mui/material/Tooltip';
+import { DiReact, DiJavascript1, DiHtml5, DiCss3 } from 'react-icons/di';
 
 export default function Card2() {
   return (
@@ -20,12 +21,15 @@ export default function Card2() {
           <CardMedia
             sx={{ height: 140 }}
             image= {projectphoto2}
-            title="photo2"
+            title="RateMyDorm"
           />
           <CardContent>
           <ThemeProvider theme = {Theme}>
-            <Typography gutterBottom variant="h5" component="div" color = "secondary">
+            <Typography  variant="h5" component="div" color = "white">
               RateMyDorm
+            </Typography>
+            <Typography gutterBottom color = "secondary">
+              <DiReact size = "25px"/><DiJavascript1 size = "25px"/><DiHtml5 size = "25px"/><DiCss3 size = "25px"/>
             </Typography>
           </ThemeProvider>
             <Typography variant="body2" color="white">

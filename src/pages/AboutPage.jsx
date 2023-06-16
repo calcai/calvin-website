@@ -10,7 +10,7 @@ const AboutPage = () => {
   return (
     <div>
         <div className = "container-fluid" id = "about-container" style = {{marginBottom: "100px"}}>
-            <h1 id = "primary">About Me</h1>
+            <h1 className = "centered" id = "primary">About Me</h1>
             <div className = "row">
               <div className = "col-lg">
                  <img src = {aboutphoto1} id = "aboutphoto1"/>

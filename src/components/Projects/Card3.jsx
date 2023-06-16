@@ -10,6 +10,7 @@ import IconButton from '@mui/material/IconButton';
 import Theme from '../Theme';
 import { ThemeProvider } from '@emotion/react';
 import Tooltip from '@mui/material/Tooltip';
+import { DiJava } from 'react-icons/di';
 
 export default function Card3() {
   return (
@@ -19,12 +20,15 @@ export default function Card3() {
             <CardMedia
             sx={{ height: 140 }}
             image= {projectphoto3}
-            title="photo3"
+            title="WordStat"
             />
             <CardContent>
             <ThemeProvider theme = {Theme}>
-                <Typography gutterBottom variant="h5" component="div" color = "secondary">
+                <Typography  variant="h5" component="div" color = "white">
                     WordStat
+                </Typography>
+                <Typography gutterBottom color = "secondary">
+                    <DiJava size = "25px"/>
                 </Typography>
             </ThemeProvider>
                 <Typography variant="body2" color="white">

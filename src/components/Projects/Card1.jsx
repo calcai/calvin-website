@@ -8,7 +8,7 @@ import projectphoto1 from "../../img/projectphoto1.jpg"
 import GitHubIcon from '@mui/icons-material/GitHub';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import IconButton from '@mui/material/IconButton';
-import Theme from '../Theme';
+import Theme from '../../Theme';
 import { ThemeProvider } from '@emotion/react';
 import Tooltip from '@mui/material/Tooltip';
 import { DiReact, DiJavascript1, DiHtml5, DiCss3 } from 'react-icons/di';

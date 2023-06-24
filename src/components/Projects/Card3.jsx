@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 import projectphoto3 from "../../img/projectphoto3.jpg"
 import GitHubIcon from '@mui/icons-material/GitHub';
 import IconButton from '@mui/material/IconButton';
-import Theme from '../Theme';
+import Theme from '../../Theme';
 import { ThemeProvider } from '@emotion/react';
 import Tooltip from '@mui/material/Tooltip';
 import { DiJava } from 'react-icons/di';

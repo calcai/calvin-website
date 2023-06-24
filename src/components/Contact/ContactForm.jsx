@@ -69,7 +69,7 @@ const ContactForm = () => {
               e.target,
               USER_ID
             )
-            .then(handleClick)
+            .then()
             .catch(error => console.log('FAILED...', error));
     
             setFormState(formState => ({

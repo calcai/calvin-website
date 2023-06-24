@@ -8,6 +8,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import emailjs from '@emailjs/browser';
 import validate from "validate.js";
+import Box from "@mui/material/Box/Box";
+import Snackbar from '@mui/material/Snackbar';
+
 
 const Theme = createTheme({
     palette: {
@@ -22,11 +25,17 @@ let USER_ID = 'Hfo06vknUNEUDO6MT'
 
 
 const schema = {
-    name: {
+    firstname: {
       presence: { allowEmpty: false, message: 'is required' },
       length: {
         maximum: 128,
       },
+    },
+    lastname: {
+        presence: { allowEmpty: false, message: 'is required' },
+        length: {
+          maximum: 128,
+        },
     },
     email: {
       presence: { allowEmpty: false, message: 'is required' },
@@ -35,12 +44,24 @@ const schema = {
         maximum: 300,
       },
     },
+    phone: {
+        presence: { allowEmpty: false, message: 'is required' },
+        length: {
+          maximum: 20,
+        },
+      },
+      message: {
+        presence: { allowEmpty: false, message: 'is required' },
+        length: {
+          maximum: 1000,
+        },
+      },
 };
 
 const ContactForm = () => {
 
-
     const sendEmail = (e) => {
+
         e.preventDefault();
             emailjs.sendForm(
               SERVICE_ID,
@@ -48,7 +69,7 @@ const ContactForm = () => {
               e.target,
               USER_ID
             )
-            .then((res) => console.log('SUCCESS!', res.status, res.text))
+            .then(handleClick)
             .catch(error => console.log('FAILED...', error));
     
             setFormState(formState => ({
@@ -58,6 +79,11 @@ const ContactForm = () => {
               touched: {},
               errors: {}
             }));
+    }
+
+
+    const failNotif = () => {
+
     }
 
     const [formState, setFormState] = useState({
@@ -242,7 +268,7 @@ const ContactForm = () => {
                                     input: {
                                     color: "#4682B4"
                                     },
-                                    width: { md: 330 }
+                                    width: { md: 700 }
                                 }}
                                 InputLabelProps={{
                                     style: { color: '#ADD8E6' },
@@ -263,6 +289,7 @@ const ContactForm = () => {
                             variant="contained"
                             type="submit"
                             color="primary"
+                            disabled={!formState.isValid}
                             >
                                 Submit
                         </Button>

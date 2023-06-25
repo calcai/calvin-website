@@ -27,7 +27,7 @@ body {
   }
   
   img {
-    height: 100%;
+    height: auto;
     width: 100%;
     margin: auto;
   }
@@ -56,6 +56,10 @@ body {
   }
   
   #row1{
+    margin-left: 150px;
+  }
+
+  #row2{
     margin-left: 150px;
   }
 
@@ -95,7 +99,7 @@ body {
   .centered{
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 
   #centered{

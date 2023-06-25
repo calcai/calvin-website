@@ -14,6 +14,9 @@ import Tooltip from '@mui/material/Tooltip';
 import { DiReact, DiJavascript1, DiHtml5, DiCss3 } from 'react-icons/di';
 
 export default function Card1() {
+
+  
+
   return (
     <div className = "cards">
       <ThemeProvider theme = {Theme}>
@@ -38,12 +41,12 @@ export default function Card1() {
           </CardContent>
           <CardActions>
             <Tooltip title = "Open GitHub Repository">
-              <IconButton color = "secondary" onClick={()=> {window.location.href = "https://github.com/calcai/wordle-clone"}}>
+              <IconButton color = "secondary" onClick={() => window.open("https://github.com/calcai/wordle-clone", '_blank')}>
                 <GitHubIcon/>
               </IconButton>
             </Tooltip>
             <Tooltip title = "Open Page">
-              <IconButton color = "secondary" onClick={()=> {window.location.href = "https://calcai.github.io/wordle-clone/"}}>
+              <IconButton color = "secondary" onClick={()=> {window.open("https://calcai.github.io/wordle-clone/", "_blank")}}>
                 <OpenInNewIcon/>
               </IconButton>
             </Tooltip>

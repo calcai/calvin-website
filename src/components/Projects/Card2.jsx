@@ -40,7 +40,7 @@ export default function Card2() {
           </CardContent>
           <CardActions>
             <Tooltip title = "Open Page">
-              <IconButton color = "secondary" onClick={()=> {window.location.href = "https://staging.d2tkpyqoad8nwq.amplifyapp.com/"}}>
+              <IconButton color = "secondary" onClick={()=> {window.open("https://staging.d2tkpyqoad8nwq.amplifyapp.com/", "_blank")}}>
                 <OpenInNewIcon/>
               </IconButton>
             </Tooltip>

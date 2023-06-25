@@ -133,3 +133,8 @@ body {
     right: 20%;
     bottom: 0;
   }
+
+  .logo{
+    max-width: 30px;
+    height: 30px
+  }

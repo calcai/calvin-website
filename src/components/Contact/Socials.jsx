@@ -36,7 +36,7 @@ const Socials = () => {
                     </div>
                     <div className = "col-sm" id = "centered">
                         <ThemeProvider theme = {Theme}>
-                            <IconButton size = "large" onClick = {() => {window.location = "mailto:calvin.cai@case.edu"}}>
+                            <IconButton size = "large" onClick = {() => {window.location = "mailto:cyc44@case.edu"}}>
                                 <EmailIcon fontSize="large" color = "secondary"/>
                             </IconButton>
                         </ThemeProvider>

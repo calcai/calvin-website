@@ -8,6 +8,7 @@ import Theme from '../Theme';
 import { ThemeProvider } from '@emotion/react';
 import '../index.css';
 import { useNavigate } from 'react-router-dom';
+import logo from "../img/logo2.png"
 
 export default function ButtonAppBar() {
 
@@ -18,9 +19,9 @@ export default function ButtonAppBar() {
       <Box sx={{ flexGrow: 1 }}>
         <AppBar position="static" style={{ background: 'transparent', boxShadow: 'none'}}>
           <Toolbar>
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} onClick = {() => (navigate("/"))}>
-              CC
-            </Typography>
+            <Box style = {{flexGrow: 1}} sx={{ flexGrow: 1, maxHeight: 50 }} onClick = {() => (navigate("/"))}>
+              <Button><img src = {logo} className = "logo"></img></Button>
+            </Box>
             <Button color="inherit" id = "menu-button" onClick={() => navigate("/about")}>About</Button>
             <Button color="inherit" id= "menu-button" onClick = {() => navigate("/projects")}>Projects</Button>
             <Button color="inherit" id = "menu-button" onClick = {() => navigate("/contact")}>Contact</Button>

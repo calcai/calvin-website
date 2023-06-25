@@ -15,7 +15,7 @@ const MainPage = () => {
         <div className = "row">
           <div className = "col-lg" id = "row1">
             <div id = "name" className = "title">Calvin<br/>Cai</div>
-            <h1 id = "primary" className = "title">Software Engineer</h1>
+            <h1 id = "secondary" className = "title">Software Engineer</h1>
             <p id = "small">Computer science student at Case Western Reserve University with experience with a multitude of technolgies.</p>
           </div>
           <div className= "col-lg">

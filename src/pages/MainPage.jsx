@@ -17,13 +17,11 @@ const MainPage = () => {
             <div id = "name" className = "title">Calvin<br/>Cai</div>
             <h1 id = "secondary" className = "title">Software Engineer</h1>
             <p id = "small">Computer science student at Case Western Reserve University with experience with a multitude of technolgies.</p>
+            <Button variant="contained" style = {{maxWidth: "90px"}} onClick = {() => window.open(Resume)}>Resume</Button>
           </div>
           <div className= "col-lg">
             <img src = {homephoto} className = 'circle'/>
           </div>
-        </div>
-        <div className = "row" id = "row2">
-          <Button variant="contained" style = {{maxWidth: "90px"}} onClick = {() => window.open(Resume)}>Resume</Button>
         </div>
       </div>
     </div>

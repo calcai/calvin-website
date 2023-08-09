@@ -11,31 +11,31 @@ const Skills = () => {
             <div className = "row">
                 <div className = "col-sm">
                     <div style={{display: "flex", justifyContent: "center"}}>  
-                        <DiJava color = "#ADD8E6" size = "40px"/>
+                        <DiJava color = "#ADD8E6" size = "2.2vw"/>
                     </div> 
                     <p id = "skills">Java</p>
                 </div>
                 <div className = "col-sm">
                     <div style={{display: "flex", justifyContent: "center"}}>  
-                        <DiPython color = "#ADD8E6" size = "40px"/>
+                        <DiPython color = "#ADD8E6" size = "2.2vw"/>
                     </div>
                     <p id = "skills">Python</p>
                 </div>
                 <div className = "col-sm">
                     <div style={{display: "flex", justifyContent: "center"}}>  
-                        <DiJavascript1 color = "#ADD8E6" size = "40px"/>
+                        <DiJavascript1 color = "#ADD8E6" size = "2.2vw"/>
                     </div>
                     <p id = "skills">JavaScript</p>
                 </div>
                 <div className = "col-sm">
                     <div style={{display: "flex", justifyContent: "center"}}>  
-                        <DiHtml5 color = "#ADD8E6" size = "40px"/>
+                        <DiHtml5 color = "#ADD8E6" size = "2.2vw"/>
                     </div>
                     <p id = "skills">HTML5</p>
                 </div>
                 <div className = "col-sm">
                     <div style={{display: "flex", justifyContent: "center"}}>  
-                        <DiCss3 color = "#ADD8E6" size = "40px"/>
+                        <DiCss3 color = "#ADD8E6" size = "2.2vw"/>
                     </div>
                     <p id = "skills">CSS3</p>
                 </div>
@@ -44,25 +44,25 @@ const Skills = () => {
             <div class = "row">
                 <div className = "col-sm">
                     <div style={{display: "flex", justifyContent: "center"}}>  
-                        <DiReact color = "#ADD8E6" size = "40px"/>
+                        <DiReact color = "#ADD8E6" size = "2.2vw"/>
                     </div>
                     <p id = "skills">React.js</p>
                 </div>
                 <div className = "col-sm">
                     <div style={{display: "flex", justifyContent: "center"}}>  
-                        <DiBootstrap color = "#ADD8E6" size = "40px"/>
+                        <DiBootstrap color = "#ADD8E6" size = "2.2vw"/>
                     </div>
                     <p id = "skills">Bootstrap</p>
                 </div>
                 <div className = "col-sm">
                     <div style={{display: "flex", justifyContent: "center"}}>  
-                        <DiGit color = "#ADD8E6" size = "40px"/>
+                        <DiGit color = "#ADD8E6" size = "2.2vw"/>
                     </div>
                     <p id = "skills">Git</p>
                 </div>
                 <div className = "col-sm">
                     <div style={{display: "flex", justifyContent: "center"}}>  
-                        <DiGithubBadge color = "#ADD8E6" size = "40px"/>
+                        <DiGithubBadge color = "#ADD8E6" size = "2.2vw"/>
                     </div>
                     <p id = "skills">GitHub</p>
                 </div>

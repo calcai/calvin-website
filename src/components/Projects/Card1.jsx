@@ -3,6 +3,7 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
+import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import projectphoto1 from "../../img/projectphoto1.jpg"
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -15,42 +16,44 @@ import { DiReact, DiJavascript1, DiHtml5, DiCss3 } from 'react-icons/di';
 
 export default function Card1() {
 
-  
-
   return (
-    <div className = "cards">
+    <div className = "cards" id = "centered">
       <ThemeProvider theme = {Theme}>
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxHeight: 260, maxWidth: 630, display: 'flex'}}>
           <CardMedia
-            sx={{ height: 140 }}
+            component = "img"
+            sx={{ width: 260 }}
             image= {projectphoto1}
             title="Wordle Clone"
           />
-          <CardContent>
-          <ThemeProvider theme = {Theme}>
-            <Typography  variant="h5" component="div" color = "white">
-              Wordle Clone
-            </Typography>
-            <Typography gutterBottom color = "secondary">
-              <DiReact size = "25px"/><DiJavascript1 size = "25px"/><DiHtml5 size = "25px"/><DiCss3 size = "25px"/>
-            </Typography>
-          </ThemeProvider>
-            <Typography variant="body2" color="white">
-              Created a clone of the popular New York Times game, Wordle using React.js, HTML, and CSS.
-            </Typography>
-          </CardContent>
-          <CardActions>
-            <Tooltip title = "Open GitHub Repository">
-              <IconButton color = "secondary" onClick={() => window.open("https://github.com/calcai/wordle-clone", '_blank')}>
-                <GitHubIcon/>
-              </IconButton>
-            </Tooltip>
-            <Tooltip title = "Open Page">
-              <IconButton color = "secondary" onClick={()=> {window.open("https://calcai.github.io/wordle-clone/", "_blank")}}>
-                <OpenInNewIcon/>
-              </IconButton>
-            </Tooltip>
-          </CardActions>
+          <Box sx = {{display: 'flex', flexDirection: 'column', maxWidth: 370, minWidth: 370}}>
+            <CardContent>
+            <ThemeProvider theme = {Theme}>
+              <Typography  variant="h5" component="div" color = "white">
+                Wordle Clone
+              </Typography>
+              <Typography gutterBottom color = "secondary">
+                <DiReact size = "25px"/><DiJavascript1 size = "25px"/><DiHtml5 size = "25px"/><DiCss3 size = "25px"/>
+              </Typography>
+            </ThemeProvider>
+              <Typography variant="body2" color="white">
+                Created a clone of the popular New York Times game, Wordle using React.js, HTML, and CSS.
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <Tooltip title = "Open GitHub Repository">
+                <IconButton color = "secondary" onClick={() => window.open("https://github.com/calcai/wordle-clone", '_blank')}>
+                  <GitHubIcon/>
+                </IconButton>
+              </Tooltip>
+              <Tooltip title = "Open Page">
+                <IconButton color = "secondary" onClick={()=> {window.open("https://calcai.github.io/wordle-clone/", "_blank")}}>
+                  <OpenInNewIcon/>
+                </IconButton>
+              </Tooltip>
+            </CardActions>
+          </Box>          
+          
         </Card>
       </ThemeProvider>
     </div>

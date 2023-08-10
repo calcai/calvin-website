@@ -13,13 +13,13 @@ const MainPage = () => {
     <div>
       <div className = "container-fluid" id = "container1">
         <div className = "row">
-          <div className = "col-lg" id = "row1">
+          <div className = "col-sm" id = "row1">
             <div id = "name" className = "title">Calvin<br/>Cai</div>
             <h1 id = "secondary" className = "title">Software Engineer</h1>
             <p id = "small">Computer science student at Case Western Reserve University with experience with a multitude of technolgies.</p>
             <Button variant="contained" style = {{maxWidth: "90px"}} onClick = {() => window.open(Resume)}>Resume</Button>
           </div>
-          <div className= "col-lg">
+          <div className= "col-sm">
             <img src = {homephoto} className = 'circle'/>
           </div>
         </div>

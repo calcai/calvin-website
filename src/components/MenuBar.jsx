@@ -23,7 +23,7 @@ export default function ButtonAppBar() {
               <Button><img src = {logo} className = "logo"></img></Button>
             </Box>
             <Button color="inherit" id = "menu-button" onClick={() => navigate("/about")}>About</Button>
-            <Button color="inherit" id= "menu-button" onClick = {() => navigate("/projects")}>Projects</Button>
+            <Button color="inherit" id= "menu-button" onClick = {() => navigate("/experience")}>Experience & Projects</Button>
             <Button color="inherit" id = "menu-button" onClick = {() => navigate("/contact")}>Contact</Button>
           </Toolbar>
         </AppBar>

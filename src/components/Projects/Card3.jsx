@@ -3,6 +3,7 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
+import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import projectphoto3 from "../../img/projectphoto3.jpg"
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -14,36 +15,39 @@ import { DiJava } from 'react-icons/di';
 
 export default function Card3() {
   return (
-    <div className = "cards">
+    <div className = "cards" id = "centered">
         <ThemeProvider theme = {Theme}>
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxHeight: 260, maxWidth: 630, display: 'flex'}}>
             <CardMedia
-            sx={{ height: 140 }}
-            image= {projectphoto3}
-            title="WordStat"
+                component = "img"
+                sx={{ width: 260 }}
+                image= {projectphoto3}
+                title="WordStat"
             />
-            <CardContent>
-            <ThemeProvider theme = {Theme}>
-                <Typography  variant="h5" component="div" color = "white">
-                    WordStat
-                </Typography>
-                <Typography gutterBottom color = "secondary">
-                    <DiJava size = "25px"/>
-                </Typography>
-            </ThemeProvider>
-                <Typography variant="body2" color="white">
-                    Created program to read .TXT files, convert entire text into a hash map, and find patterns, including word frequencies and collocations.
-                    Created and implemented my own HashMap class.
-                    Used key-value pairs to determine properties of each text file.
-                </Typography>
-            </CardContent>
-            <CardActions>
-            <Tooltip title = "Open GitHub Repository">
-                <IconButton color = "secondary" onClick={()=> {window.open("https://github.com/calcai/WordStat", "_blank")}}>
-                    <GitHubIcon/>
-                </IconButton>
-            </Tooltip>
-            </CardActions>
+            <Box sx = {{display: 'flex', flexDirection: 'column', maxWidth: 370, minWidth: 370}}>
+                <CardContent>
+                <ThemeProvider theme = {Theme}>
+                    <Typography  variant="h5" component="div" color = "white">
+                        WordStat
+                    </Typography>
+                    <Typography gutterBottom color = "secondary">
+                        <DiJava size = "25px"/>
+                    </Typography>
+                </ThemeProvider>
+                    <Typography variant="body2" color="white">
+                        Created program to read .TXT files, convert entire text into a hash map, and find patterns, including word frequencies and collocations.<br/>
+                        Created and implemented my own HashMap class.<br/>
+                        Used key-value pairs to determine properties of each text file.
+                    </Typography>
+                </CardContent>
+                <CardActions>
+                <Tooltip title = "Open GitHub Repository">
+                    <IconButton color = "secondary" onClick={()=> {window.open("https://github.com/calcai/WordStat", "_blank")}}>
+                        <GitHubIcon/>
+                    </IconButton>
+                </Tooltip>
+                </CardActions>
+            </Box>
         </Card>
         </ThemeProvider>
     </div>

@@ -1,0 +1,31 @@
+{
+    "experiences":[
+        {
+            "jobtitle": "Programming Instructor",
+            "company": "iD Tech",
+            "location": "Stanford, CA",
+            "date": "June 2022 - August 2022",
+            "description1": "",
+            "description2": "",
+            "description3": ""
+        },
+        {
+            "jobtitle": "Programming Instructor",
+            "company": "iD Tech",
+            "location": "Stanford, CA",
+            "date": "June 2022 - August 2022",
+            "description1": "Led introductory and advanced Java courses for middle and high school students.",
+            "description2": "Fostered critical thinking and problem-solving skills through code debugging and efficiency improvement.",
+            "description3": "Communicated as a liaison between students, parents, and management."
+        },
+        {
+            "jobtitle": "Data Science/Bioinformatics Researcher",
+            "company": "Case Western Reserve University",
+            "location": "Cleveland, OH",
+            "date": "July 2023 - Current",
+            "description1": "Leverage Python programming to analyze genomic data and identify patterns, in efforts to discover potential biomarkers for a specific disease, contributing to ongoing research efforts.",
+            "description2": "",
+            "description3": ""
+        }
+    ]
+}

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
+import { Grid } from '@mui/material';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Box from '@mui/material/Box';
@@ -41,18 +41,22 @@ export default function Card4() {
                         Layout created using bootstrap.
                     </Typography>
                 </CardContent>
-                <CardActions>
-                <Tooltip title = "Open GitHub Repository">
-                    <IconButton color = "secondary" onClick={()=> {window.open("https://github.com/calcai/calvin-website", "_blank")}}>
-                        <GitHubIcon/>
-                    </IconButton>
-                </Tooltip>
-                <Tooltip title = "Open Page">
-                <IconButton color = "secondary" onClick={()=> {window.open("https://calvincai.me", "_blank")}}>
-                    <OpenInNewIcon/>
-                </IconButton>
-                </Tooltip>
-                </CardActions>
+                <Grid
+                container
+                alignItems="center"
+                justifyContent="center"
+                >
+                    <Tooltip title = "Open GitHub Repository">
+                        <IconButton color = "secondary" onClick={()=> {window.open("https://github.com/calcai/calvin-website", "_blank")}}>
+                            <GitHubIcon/>
+                        </IconButton>
+                    </Tooltip>
+                    <Tooltip title = "Open Page">
+                        <IconButton color = "secondary" onClick={()=> {window.open("https://calvincai.me", "_blank")}}>
+                            <OpenInNewIcon/>
+                        </IconButton>
+                    </Tooltip>
+                </Grid>
             </Box>
             
         </Card>

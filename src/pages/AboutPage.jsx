@@ -24,7 +24,7 @@ const AboutPage = () => {
         <div className = "container-fluid" id = "about-container"style = {{marginBottom: "100px"}}>
             <div className = "row">
                 <div className = "col-lg">
-                    <p>Outside of programming, my biggest passion is wrestling, which I compete in at the Division III level for Case Western Reserve University. Through my first two seasons, I have started for the team both years at the 157 lb weight class. Some of my accolades consist of the following: </p>
+                    <p>Outside of programming, my biggest passion is wrestling, which I compete in at the Division III level for Case Western Reserve University. Through my first three seasons, I have started for the team both years at the 149 and 157 lb weight class. Some of my accolades consist of the following: </p>
                     <ul>
                         <li>2023 NCAA Central Region 5th Place Finish</li>
                         <li>2023 NWCA Scholar-All American</li>

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
+import { Grid } from '@mui/material';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Box from '@mui/material/Box';
@@ -40,7 +40,11 @@ export default function Card1() {
                 Created a clone of the popular New York Times game, Wordle using React.js, HTML, and CSS.
               </Typography>
             </CardContent>
-            <CardActions>
+            <Grid
+                container
+                alignItems="center"
+                justifyContent="center"
+            >
               <Tooltip title = "Open GitHub Repository">
                 <IconButton color = "secondary" onClick={() => window.open("https://github.com/calcai/wordle-clone", '_blank')}>
                   <GitHubIcon/>
@@ -51,7 +55,7 @@ export default function Card1() {
                   <OpenInNewIcon/>
                 </IconButton>
               </Tooltip>
-            </CardActions>
+            </Grid>
           </Box>          
           
         </Card>

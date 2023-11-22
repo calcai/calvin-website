@@ -1,6 +1,5 @@
 import * as React from 'react';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Box from '@mui/material/Box';
@@ -12,6 +11,7 @@ import Theme from '../../Theme';
 import { ThemeProvider } from '@emotion/react';
 import Tooltip from '@mui/material/Tooltip';
 import { DiPython } from 'react-icons/di';
+import { Grid } from '@mui/material';
 
 export default function Card5() {
   return (
@@ -39,13 +39,17 @@ export default function Card5() {
                 Retrieved Spotify popularity score, followers, genre, top 10 popular songs, discography, and similar artists according to user input.
                 </Typography>
             </CardContent>
-            <CardActions>
+            <Grid
+                container
+                alignItems="center"
+                justifyContent="center"
+            >
             <Tooltip title = "Open GitHub Repository">
                 <IconButton color = "secondary" onClick={()=> {window.open("https://github.com/calcai/spotifyartistapp", "_blank")}}>
                     <GitHubIcon/>
                 </IconButton>
             </Tooltip>
-            </CardActions>
+            </Grid>
             </Box>
         </Card>
         </ThemeProvider>

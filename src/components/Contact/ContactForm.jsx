@@ -26,27 +26,21 @@ let USER_ID = 'Hfo06vknUNEUDO6MT'
 
 
 const schema = {
-    firstname: {
+    name: {
       presence: { allowEmpty: false, message: 'is required' },
       length: {
         maximum: 128,
       },
     },
-    lastname: {
-        presence: { allowEmpty: false, message: 'is required' },
-        length: {
-          maximum: 128,
-        },
-    },
     email: {
       presence: { allowEmpty: false, message: 'is required' },
-      email: true,
+      email: false,
       length: {
         maximum: 300,
       },
     },
     phone: {
-        presence: { allowEmpty: false, message: 'is required' },
+        presence: { allowEmpty: true, message: 'is required' },
         length: {
           maximum: 20,
         },
@@ -154,128 +148,89 @@ const ContactForm = () => {
                     name="contact-form"
                     onSubmit={sendEmail}
                 >
-                    <div className = "container-sm">
-                        <div className = "row" id = "contact-form">
-                            <div className = "col-lg" id = "field">
-                                <div className = "form">
-                                    <TextField
-                                        fullWidth
-                                        placeholder="First Name"
-                                        label = "First Name"
-                                        variant="outlined"
-                                        size="medium"
-                                        sx={{
-                                            input: {
-                                            color: "#4682B4"
-                                            },
-                                            width: { md: 330 }
-                                        }}
-                                        InputLabelProps={{
-                                            style: { color: '#ADD8E6' },
-                                        }}
-                                        name = "firstname"
-                                        id = "firstname"
-                                        helperText={
-                                            hasError('firstname') ? formState.errors.firstname[0] : null
-                                        }
-                                        error={hasError('firstname')}
-                                        onChange={handleChange}
-                                        type="text"
-                                        value={formState.values.firstname || ''}
-                                    />
-                                </div>
-                            </div>
-                            <div className = "col-lg" id = "field">
-                                <div className = "form">
-                                    <TextField
-                                        fullWidth
-                                        placeholder="Last Name"
-                                        label = "Last Name"
-                                        variant="outlined"
-                                        size="medium"
-                                        sx={{
-                                            input: {
-                                            color: "#4682B4"
-                                            },
-                                            width: { md: 330 }
-                                        }}
-                                        InputLabelProps={{
-                                            style: { color: '#ADD8E6' },
-                                        }}
-                                        name = "lastname"
-                                        id = "lastname"
-                                        helperText={
-                                            hasError('lastname') ? formState.errors.lastname[0] : null
-                                        }
-                                        error={hasError('lastname')}
-                                        onChange={handleChange}
-                                        type="text"
-                                        value={formState.values.lastname || ''}
-                                />
-                                </div>
-                            </div>
+                    <div>
+                        <div id = "contact-form">                            
+                            <TextField
+                                fullWidth
+                                placeholder="Name"
+                                label = "Name"
+                                variant="outlined"
+                                size="medium"
+                                sx={{
+                                    input: {
+                                    color: "#4682B4"
+                                    },
+                                    width: "50%"
+                                }}
+                                InputLabelProps={{
+                                    style: { color: '#ADD8E6' },
+                                }}
+                                name = "name"
+                                id = "firstname"
+                                helperText={
+                                    hasError('name') ? formState.errors.name[0] : null
+                                }
+                                error={hasError('name')}
+                                onChange={handleChange}
+                                type="text"
+                                value={formState.values.name || ''}
+                            />                            
                         </div>
-                        <div className='row' id = "contact-form">
-                            <div className = "col-lg" id = "field">
-                                <div className = "form">
-                                    <TextField
-                                        fullWidth
-                                        placeholder="E-mail"
-                                        label = "E-mail"
-                                        variant="outlined"
-                                        size="medium"
-                                        sx={{
-                                            input: {
-                                            color: "#4682B4"
-                                            },
-                                            width: { md: 330 }
-                                        }}
-                                        InputLabelProps={{
-                                            style: { color: '#ADD8E6' },
-                                        }}
-                                        name = "email"
-                                        id = "email"
-                                        helperText={
-                                            hasError('email') ? formState.errors.email[0] : null
-                                        }
-                                        error={hasError('email')}
-                                        onChange={handleChange}
-                                        type="text"
-                                        value={formState.values.email || ''}
-                                />
-                                </div>
-                            </div>
-                            <div className = "col-lg" id = "field">
-                                <div className = "form">
-                                    <TextField
-                                        fullWidth
-                                        placeholder="Phone Number"
-                                        label = "Phone Number"
-                                        variant="outlined"
-                                        size="medium"
-                                        sx={{
-                                            input: {
-                                            color: "#4682B4"
-                                            },
-                                            width: { md: 330 }
-                                        }}
-                                        InputLabelProps={{
-                                            style: { color: '#ADD8E6' },
-                                        }}
-                                        name = "phone"
-                                        id = "phone"
-                                        helperText={
-                                            hasError('phone') ? formState.errors.phone[0] : null
-                                        }
-                                        error={hasError('phone')}
-                                        onChange={handleChange}
-                                        type="text"
-                                        value={formState.values.phone || ''}
-                                    />
-                                </div>
-                            </div>
+                        <div id = "contact-form">
+                                <TextField
+                                    fullWidth
+                                    placeholder="E-mail"
+                                    label = "E-mail"
+                                    variant="outlined"
+                                    size="medium"
+                                    sx={{
+                                        input: {
+                                        color: "#4682B4"
+                                        },
+                                        width: "50%"
+                                    }}
+                                    InputLabelProps={{
+                                        style: { color: '#ADD8E6' },
+                                    }}
+                                    name = "email"
+                                    id = "email"
+                                    helperText={
+                                        hasError('email') ? formState.errors.email[0] : null
+                                    }
+                                    error={hasError('email')}
+                                    onChange={handleChange}
+                                    type="text"
+                                    value={formState.values.email || ''}
+                            />
                         </div>
-                        <div className = "row" id = "contact-field">
+                            <div id = "contact-form">                           
+                                <TextField
+                                    fullWidth
+                                    placeholder="Phone Number (optional)"
+                                    label = "Phone Number (optional)"
+                                    variant="outlined"
+                                    size="medium"
+                                    sx={{
+                                        input: {
+                                        color: "#4682B4"
+                                        },
+                                        width: "50%"
+                                    }}
+                                    InputLabelProps={{
+                                        style: { color: '#ADD8E6' },
+                                    }}
+                                    name = "phone"
+                                    id = "phone"
+                                    helperText={
+                                        hasError('phone') ? formState.errors.phone[0] : null
+                                    }
+                                    error={hasError('phone')}
+                                    onChange={handleChange}
+                                    type="text"
+                                    value={formState.values.phone || ''}
+                                />                          
+                        </div>
+                        <div id = "contact-field">
                             <TextField
                                 multiline
                                 minRows={6}
@@ -289,7 +244,7 @@ const ContactForm = () => {
                                         input: {
                                         color: "#4682B4"
                                         },
-                                        width: { md: 700 }
+                                        width: "50%"
                                     }}
                                     InputLabelProps={{
                                         style: { color: '#ADD8E6' },

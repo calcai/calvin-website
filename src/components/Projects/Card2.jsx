@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
+import { Grid } from '@mui/material';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Box from '@mui/material/Box';
@@ -40,13 +40,17 @@ export default function Card2() {
                 Test using username: calvin.cai@case.edu, password: testacct
               </Typography>
             </CardContent>
-            <CardActions>
+            <Grid
+                container
+                alignItems="center"
+                justifyContent="center"
+            >
               <Tooltip title = "Open Page">
                 <IconButton color = "secondary" onClick={()=> {window.open("https://staging.d2tkpyqoad8nwq.amplifyapp.com/", "_blank")}}>
                   <OpenInNewIcon/>
                 </IconButton>
               </Tooltip>
-            </CardActions>
+            </Grid>
           </Box>
         </Card>
       </ThemeProvider>

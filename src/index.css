@@ -62,7 +62,7 @@ body {
   }
   
   #row1{
-    margin-left: 150px;
+    margin-left: 10vw;
   }
 
 
@@ -124,13 +124,12 @@ body {
   #contact-form{
     display: flex;
     justify-content: center;
-    padding: 0px 300px 0px 300px;
+    margin-bottom: 10px
   }
 
   #contact-field{
     display: flex;
     justify-content: center;
-    padding: 0px 315px 0px 315px;
     margin-bottom: 20px
   }
 

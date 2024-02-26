@@ -4,7 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import projectphoto7 from "../../img/projectphoto7.jpg"
+import projectphoto8 from "../../img/projectphoto8.png"
 import GitHubIcon from '@mui/icons-material/GitHub';
 import IconButton from '@mui/material/IconButton';
 import Theme from '../../Theme';
@@ -22,14 +22,14 @@ export default function Card8() {
             <CardMedia
             component = "img"
             sx={{ width: 260 }}
-            image= {projectphoto7}
+            image= {projectphoto8}
             title="Iris K-Means Clustering and Neural Network"
             />
             <Box sx = {{display: 'flex', flexDirection: 'column', maxWidth: 370, minWidth: 370}}>
             <CardContent>
             <ThemeProvider theme = {Theme}>
                 <Typography  variant="h5" component="div" color = "white">
-                    K-Means  & Neural Network
+                    K-Means & Neural Network
                 </Typography>
                 <Typography gutterBottom color = "secondary">
                     <DiPython size = "25px"/>

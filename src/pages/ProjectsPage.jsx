@@ -9,6 +9,7 @@ import Card7 from '../components/Projects/Card7'
 import Card5 from '../components/Projects/Card5'
 import Card6 from '../components/Projects/Card6'
 import Card8 from '../components/Projects/Card8'
+import Card9 from '../components/Projects/Card9'
 import Experience1 from '../components/Experience/Experience1';
 import Experience2 from '../components/Experience/Experience2';
 
@@ -23,9 +24,10 @@ const ProjectsPage = () => {
       <h1 className = "centered" id = "primary">Projects</h1>
       <div className = "container-fluid">
         <div className = "row"><div className = "col"><Card1/></div><div className = "col"><Card2/></div></div>
-        <div className = "row"><div className = "col"><Card8/></div><div className = "col"><Card5/></div></div>
-        <div className = "row"><div className = "col"><Card6/></div><div className = "col"><Card7/></div></div>
-        <div className = "row"><div className = "col"><Card4/></div><div className = "col"><Card3/></div></div>
+        <div className = "row"><div className = "col"><Card8/></div><div className = "col"><Card9/></div></div>
+        <div className = "row"><div className = "col"><Card5/></div><div className = "col"><Card6/></div></div>
+        <div className = "row"><div className = "col"><Card7/></div><div className = "col"><Card3/></div></div>
+        <div className = "row"><div className = "col"><Card4/></div></div>
       </div>
     </div>
     </>

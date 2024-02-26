@@ -23,8 +23,8 @@
             "company": "Case Western Reserve University",
             "location": "Cleveland, OH",
             "date": "July 2023 - Current",
-            "description1": "Leverage Python programming to analyze genomic data and identify patterns, in efforts to discover potential biomarkers for a specific disease, contributing to ongoing research efforts.",
-            "description2": "",
+            "description1": "Leverage Python packages such as pandas and numPy, to analyze datasets containing thousands of genes to identify patterns, in efforts to discover biomarkers for Urology diseases, contributing to ongoing research efforts.",
+            "description2": "Conduct research to uncover genomic origins of kidney stones, harnessing online databases and sophisticated software tools to filter genomic data, and applying Linux annotation tools such as ANNOVAR in HPC environment.",
             "description3": ""
         }
     ]
